@@ -10226,8 +10226,8 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210423191115661" modified="20210423191115661" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210423200509541" modified="20210506201548237" title="$:/state/notebook-sidebar-section">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20210423200509541" modified="20210507130518264" title="$:/state/notebook-sidebar-section">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210426183815284" modified="20210426183817076" title="$:/state/showeditpreview">
 <pre>no</pre>
@@ -10262,7 +10262,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210504133803109" list="[[Backlink tiddler]] [[Decorrelating neural representations increase coding efficiency]] [[Definitions &amp; measurements of efficiency]] Sparseness" modified="20210506201557723" title="$:/StoryList">
+<div created="20210504133803109" list="[[Backlink tiddler]]" modified="20210507130527506" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210423185932378" modified="20210427153941573" title="$:/theme">
@@ -10757,11 +10757,12 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210423185544850" modified="20210423185851485" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>850px</pre>
 </div>
-<div created="20210507130317815" modified="20210507130510979" tags="$:/tags/ViewTemplate" title="Backlink tiddler">
+<div created="20210507130317815" modified="20210507130557359" tags="$:/tags/ViewTemplate" title="Backlink tiddler">
 <pre>&lt;$list filter='[is[current]backlinks[]limit[1]]' variable=dummy&gt;
-
-Backlinks: &lt;$list filter='[backlinks[]butlast[]]'&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;,
-&lt;$list filter='[backlinks[]last[]]'&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;</pre>
+&lt;hr&gt;
+Backlinks: &lt;$list filter='[&lt;currentTiddler&gt;backlinks[]butlast[]]'&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;,&lt;/$list&gt;
+&lt;$list filter='[&lt;currentTiddler&gt;backlinks[]last[]]'&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/$list&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20210428215421187" modified="20210428215512211" title="Decorrelating neural representations increase coding efficiency">
 <pre>link from repulsive bias to efficiency: 
