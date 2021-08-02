@@ -277,6 +277,8 @@ Error message and password prompt
 
 <li>Sparseness</li>
 
+<li>test</li>
+
 <li>To read list</li>
 
 <li>Two photon recoding technical details</li>
@@ -10352,7 +10354,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210802190548031" list="[[- Example formatting]] [[Overlooking View]]" modified="20210802190606063" title="$:/StoryList">
+<div created="20210802190548031" list="test [[Overlooking View]]" modified="20210802190606063" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210423185932378" modified="20210427153941573" title="$:/theme">
@@ -11063,6 +11065,17 @@ pyxeleditor assets/jump_game.pyxres
 * These two notions are related, since one expects that if a cell fires to few stimuli, then each stimulus will be encoded by a relatively small population of cells. However, it is in principle possible that most cells in a given population respond to one (or a few) stimuli, or that a small subset of neurons is very promiscuous, responding exuberantly to many stimuli. Most studies usually assess lifetime sparseness, assuming that it will be similar to population sparseness. 
 * In this context, lifetime sparseness, also termed selectivity or specificity, means that a given cell responds only to a small subset of the presented stimuli. 
 </pre>
+</div>
+<div created="20210802190750938" modified="20210802190755482" tags="" title="test">
+<pre>&lt;table&gt;
+&lt;$list filter=&quot;[!is[system]tag[reference]sort[tags]]&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$list filter=&quot;[all[current]tags[]sort[title]]&quot;
+template=&quot;$:/core/ui/TagTemplate&quot; storyview=&quot;pop&quot;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;/table&gt;</pre>
 </div>
 <div created="20210421183734450" modified="20210730165722278" tags="todo" title="To read list">
 <pre>* ~~reread grant 3.3~~
