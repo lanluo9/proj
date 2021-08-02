@@ -11066,14 +11066,24 @@ pyxeleditor assets/jump_game.pyxres
 * In this context, lifetime sparseness, also termed selectivity or specificity, means that a given cell responds only to a small subset of the presented stimuli. 
 </pre>
 </div>
-<div created="20210802190750938" modified="20210802190806416" tags="" title="test">
-<pre>&lt;table&gt;
-&lt;$list filter=&quot;[!is[system]tag[reference]sort[tags]]&quot;&gt;
+<div created="20210802190750938" modified="20210802190838969" tags="" title="test">
+<pre>&lt;$button&gt;Sort Tags
+&lt;$list filter='[!is[system]]'&gt;
+&lt;$set name=TagsString filter='[&lt;currentTiddler&gt;tags[]sort[]]'&gt;
+&lt;$action-setfield tags=&lt;&lt;TagsString&gt;&gt;/&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+
+&lt;table&gt;
+&lt;$list filter=&quot;[!is[system]tag[BC]sort[tags]]&quot;&gt;
+&lt;$set name=&quot;sorted_tags&quot; filter=&quot;[is[current]tags[]sort[]]&quot;&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/td&gt;
 &lt;td&gt;&lt;$list filter=&quot;[all[current]tags[]sort[title]]&quot;
 template=&quot;$:/core/ui/TagTemplate&quot; storyview=&quot;pop&quot;/&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;/$set&gt;
 &lt;/$list&gt;
 &lt;/table&gt;</pre>
 </div>
